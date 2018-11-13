@@ -1,0 +1,20 @@
+{{!-- The following component displays Ember's default welcome message. --}}
+<div class="page-wrapper">
+  <header role="banner">
+    <h1>Coin vault</h1>
+  </header>
+  <main role="main">
+  	<nav role="navigation">
+  		<ul>
+  			<li>{{#link-to 'list'}}List altcoins{{/link-to}}</li>
+  			<li>{{#link-to 'transaction-history'}}Txn History{{/link-to}}</li>
+  			<li></li>
+  			<li></li>
+  		</ul>
+  	</nav>
+    {{outlet}}
+  </main>
+  <footer role="contentinfo">
+    coin vault footer
+  </footer>
+</div>

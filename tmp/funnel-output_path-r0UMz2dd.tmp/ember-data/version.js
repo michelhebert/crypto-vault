@@ -1,0 +1,1 @@
+/Users/michelhebert/Documents/PROJECTS/crypto-vault/tmp/creator-output_path-sWlBbPOb.tmp/version.js

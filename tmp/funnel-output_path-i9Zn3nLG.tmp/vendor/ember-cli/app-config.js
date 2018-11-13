@@ -1,0 +1,1 @@
+/Users/michelhebert/Documents/PROJECTS/crypto-vault/tmp/funnel-input_base_path-fMu0Xo9F.tmp/app-config.js

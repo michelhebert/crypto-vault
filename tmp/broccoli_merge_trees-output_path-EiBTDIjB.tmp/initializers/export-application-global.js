@@ -1,0 +1,1 @@
+/Users/michelhebert/Documents/PROJECTS/crypto-vault/tmp/broccoli_merge_trees-input_base_path-phitFXOk.tmp/3/initializers/export-application-global.js

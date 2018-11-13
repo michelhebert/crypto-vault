@@ -1,0 +1,1 @@
+/Users/michelhebert/Documents/PROJECTS/crypto-vault/tmp/broccoli_merge_trees-input_base_path-sd9O2VsE.tmp/4/crypto-vault/tests/.eslintrc.js

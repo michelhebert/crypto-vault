@@ -1,0 +1,12 @@
+<tr>
+	<td>{{transaction.OrderUuid}}</td>
+	<td>{{transaction.Exchange}}</td>
+	<td>{{transaction.Type}}</td>
+	<td>{{transaction.Quantity}}</td>
+	<td>{{transaction.Limit}}</td>
+	<td>{{transaction.CommissionPaid}}</td>
+	<td>{{transaction.Price}}</td>
+	{{!-- https://www.npmjs.com/package/ember-moment --}}
+	<td>{{moment-format transaction.Opened 'ddd, MMM Do YYYY (h:mm:ss A)' 'M/DD/YYYY h:mm:ss A'}}</td>
+	<td>{{transaction.Closed}}</td>
+</tr>

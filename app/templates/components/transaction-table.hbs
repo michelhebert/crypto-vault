@@ -1,0 +1,21 @@
+{{total}}
+<table>
+	<thead>
+		<tr>
+			<th>Order ID</th>
+			<th>Buy/Sell pair</th>
+			<th>Type</th>
+			<th>Quantity</th>
+			<th>Limit</th>
+			<th>Commission paid</th>
+			<th>Price</th>
+			<th>Opened</th>
+			<th>Closed</th>
+		</tr>
+	</thead>
+	<tbody>
+	{{#each transactionList as |transaction|}}
+		{{transaction-rows transaction=transaction neoAmount=total}}
+	{{/each}}
+	</tbody>
+</table>

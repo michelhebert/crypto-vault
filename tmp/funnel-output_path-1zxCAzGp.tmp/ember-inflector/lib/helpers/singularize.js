@@ -1,0 +1,1 @@
+/Users/michelhebert/Documents/PROJECTS/crypto-vault/tmp/funnel-input_base_path-o62CmABR.tmp/lib/helpers/singularize.js

@@ -1,0 +1,58 @@
+<select onchange={{action 'currencySwitcher' value="target.value"}}>
+  {{#each currencyCode as |conversion index|}}
+    <option value={{index}}>{{conversion}}</option>
+  {{/each}}
+</select>
+<table>
+  <caption>Current coins</caption>
+  <thead>
+    <tr>
+      <th class="table-header-rank">Rank</th>
+      <th class="table-header-name">Name</th>
+      <th class="table-header-symbol">Symbol</th>
+      <th class="table-header-price">Price USD</th>
+      <th class="table-header-price_btc">Price BTC</th>
+      <th class="table-header-percent_change_1h">% 1h</th>
+      <th class="table-header-percent_change_24h">% 24h</th>
+      <th class="table-header-percent_change_7d">% 7d</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each model as |coin|}}
+      {{table-row
+        name=coin.name
+        price_usd=coin.price_usd
+        price_btc=coin.price_btc
+        symbol=coin.symbol
+        rank=coin.rank
+        percent_change_1h=coin.percent_change_1h
+        percent_change_24h=coin.percent_change_24h
+        percent_change_7d=coin.percent_change_7d}}
+        {{!-- last_updated=coin.last_updated
+        24h_volume_usd=coin.24h_volume_usd
+        market_cap_usd=coin.market_cap_usd
+        available_supply=coin.available_supply
+        total_supply=coin.total_supply --}}
+    {{/each}}
+  </tbody>
+</table>
+{{!-- <table>
+  <thead>
+  <tr>
+    <th class="table-header-last_updated">last_updated</th>
+    <th class="table-header-24h_volume_usd">24h_volume_usd</th>
+    <th class="table-header-market_cap_usdice">market_cap_usd</th>
+    <th class="table-header-available_supply">available_supply</th>
+    <th class="table-header-total_supply">total_supply</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td scope="col">{{last_updated}}</td>
+    <td scope="col">{{24h_volume_usd}}</td>
+    <td scope="col">{{market_cap_usd}}</td>
+    <td scope="col">{{available_supply}}</td>
+    <td scope="col">{{total_supply}}</td>
+  </tr>
+</tbody>
+</table> --}}

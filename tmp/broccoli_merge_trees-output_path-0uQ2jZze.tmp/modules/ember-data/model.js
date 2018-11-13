@@ -1,0 +1,1 @@
+/Users/michelhebert/Documents/PROJECTS/crypto-vault/tmp/broccoli_merge_trees-input_base_path-o0tn0nZu.tmp/0/modules/ember-data/model.js
