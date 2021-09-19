@@ -1,95 +1,5 @@
 'use strict';
 
-define('crypto-vault/tests/app.lint-test', [], function () {
-  'use strict';
-
-  QUnit.module('ESLint | app');
-
-  QUnit.test('adapters/application.js', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'adapters/application.js should pass ESLint\n\n');
-  });
-
-  QUnit.test('app.js', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'app.js should pass ESLint\n\n');
-  });
-
-  QUnit.test('components/file-upload.js', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'components/file-upload.js should pass ESLint\n\n');
-  });
-
-  QUnit.test('components/table-row.js', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'components/table-row.js should pass ESLint\n\n');
-  });
-
-  QUnit.test('components/transaction-rows.js', function (assert) {
-    assert.expect(1);
-    assert.ok(false, 'components/transaction-rows.js should pass ESLint\n\n2:10 - \'computed\' is defined but never used. (no-unused-vars)\n3:10 - \'scheduleOnce\' is defined but never used. (no-unused-vars)\n18:3 - Unexpected \'debugger\' statement. (no-debugger)');
-  });
-
-  QUnit.test('components/transaction-table.js', function (assert) {
-    assert.expect(1);
-    assert.ok(false, 'components/transaction-table.js should pass ESLint\n\n2:25 - \'set\' is defined but never used. (no-unused-vars)\n3:10 - \'scheduleOnce\' is defined but never used. (no-unused-vars)');
-  });
-
-  QUnit.test('controllers/list.js', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'controllers/list.js should pass ESLint\n\n');
-  });
-
-  QUnit.test('controllers/transaction-history.js', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'controllers/transaction-history.js should pass ESLint\n\n');
-  });
-
-  QUnit.test('models/custom-inflector-rules.js', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'models/custom-inflector-rules.js should pass ESLint\n\n');
-  });
-
-  QUnit.test('models/ticker.js', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'models/ticker.js should pass ESLint\n\n');
-  });
-
-  QUnit.test('models/transaction-history.js', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'models/transaction-history.js should pass ESLint\n\n');
-  });
-
-  QUnit.test('resolver.js', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'resolver.js should pass ESLint\n\n');
-  });
-
-  QUnit.test('router.js', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'router.js should pass ESLint\n\n');
-  });
-
-  QUnit.test('routes/list.js', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'routes/list.js should pass ESLint\n\n');
-  });
-
-  QUnit.test('routes/transaction-history.js', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'routes/transaction-history.js should pass ESLint\n\n');
-  });
-
-  QUnit.test('serializers/application.js', function (assert) {
-    assert.expect(1);
-    assert.ok(false, 'serializers/application.js should pass ESLint\n\n4:60 - \'requestType\' is defined but never used. (no-unused-vars)');
-  });
-
-  QUnit.test('serializers/transaction-history.js', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'serializers/transaction-history.js should pass ESLint\n\n');
-  });
-});
 define('crypto-vault/tests/helpers/destroy-app', ['exports'], function (exports) {
   'use strict';
 
@@ -287,13 +197,97 @@ define('crypto-vault/tests/integration/components/transaction-table-test', ['emb
     assert.equal(this.$().text().trim(), 'template block text');
   });
 });
-define('crypto-vault/tests/test-helper', ['crypto-vault/tests/helpers/resolver', 'ember-qunit', 'ember-cli-qunit'], function (_resolver, _emberQunit, _emberCliQunit) {
+define('crypto-vault/tests/lint/app.lint-test', [], function () {
   'use strict';
 
-  (0, _emberQunit.setResolver)(_resolver.default);
-  (0, _emberCliQunit.start)();
+  QUnit.module('ESLint | app');
+
+  QUnit.test('adapters/application.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'adapters/application.js should pass ESLint\n\n');
+  });
+
+  QUnit.test('app.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'app.js should pass ESLint\n\n');
+  });
+
+  QUnit.test('components/file-upload.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'components/file-upload.js should pass ESLint\n\n');
+  });
+
+  QUnit.test('components/table-row.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'components/table-row.js should pass ESLint\n\n');
+  });
+
+  QUnit.test('components/transaction-rows.js', function (assert) {
+    assert.expect(1);
+    assert.ok(false, 'components/transaction-rows.js should pass ESLint\n\n2:10 - \'computed\' is defined but never used. (no-unused-vars)\n3:10 - \'scheduleOnce\' is defined but never used. (no-unused-vars)\n18:3 - Unexpected \'debugger\' statement. (no-debugger)');
+  });
+
+  QUnit.test('components/transaction-table.js', function (assert) {
+    assert.expect(1);
+    assert.ok(false, 'components/transaction-table.js should pass ESLint\n\n2:25 - \'set\' is defined but never used. (no-unused-vars)\n3:10 - \'scheduleOnce\' is defined but never used. (no-unused-vars)');
+  });
+
+  QUnit.test('controllers/list.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'controllers/list.js should pass ESLint\n\n');
+  });
+
+  QUnit.test('controllers/transaction-history.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'controllers/transaction-history.js should pass ESLint\n\n');
+  });
+
+  QUnit.test('models/custom-inflector-rules.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'models/custom-inflector-rules.js should pass ESLint\n\n');
+  });
+
+  QUnit.test('models/ticker.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'models/ticker.js should pass ESLint\n\n');
+  });
+
+  QUnit.test('models/transaction-history.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'models/transaction-history.js should pass ESLint\n\n');
+  });
+
+  QUnit.test('resolver.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'resolver.js should pass ESLint\n\n');
+  });
+
+  QUnit.test('router.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'router.js should pass ESLint\n\n');
+  });
+
+  QUnit.test('routes/list.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/list.js should pass ESLint\n\n');
+  });
+
+  QUnit.test('routes/transaction-history.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'routes/transaction-history.js should pass ESLint\n\n');
+  });
+
+  QUnit.test('serializers/application.js', function (assert) {
+    assert.expect(1);
+    assert.ok(false, 'serializers/application.js should pass ESLint\n\n4:60 - \'requestType\' is defined but never used. (no-unused-vars)');
+  });
+
+  QUnit.test('serializers/transaction-history.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'serializers/transaction-history.js should pass ESLint\n\n');
+  });
 });
-define('crypto-vault/tests/tests.lint-test', [], function () {
+define('crypto-vault/tests/lint/tests.lint-test', [], function () {
   'use strict';
 
   QUnit.module('ESLint | tests');
@@ -387,6 +381,12 @@ define('crypto-vault/tests/tests.lint-test', [], function () {
     assert.expect(1);
     assert.ok(true, 'unit/serializers/transaction-history-test.js should pass ESLint\n\n');
   });
+});
+define('crypto-vault/tests/test-helper', ['crypto-vault/tests/helpers/resolver', 'ember-qunit', 'ember-cli-qunit'], function (_resolver, _emberQunit, _emberCliQunit) {
+  'use strict';
+
+  (0, _emberQunit.setResolver)(_resolver.default);
+  (0, _emberCliQunit.start)();
 });
 define('crypto-vault/tests/unit/adapters/application-test', ['ember-qunit'], function (_emberQunit) {
   'use strict';
@@ -518,6 +518,25 @@ define('crypto-vault/tests/unit/serializers/transaction-history-test', ['ember-q
     assert.ok(serializedRecord);
   });
 });
+define('crypto-vault/config/environment', [], function() {
+  var prefix = 'crypto-vault';
+try {
+  var metaName = prefix + '/config/environment';
+  var rawConfig = document.querySelector('meta[name="' + metaName + '"]').getAttribute('content');
+  var config = JSON.parse(decodeURIComponent(rawConfig));
+
+  var exports = { 'default': config };
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+  return exports;
+}
+catch(err) {
+  throw new Error('Could not read config from meta tag with name "' + metaName + '".');
+}
+
+});
+
 require('crypto-vault/tests/test-helper');
 EmberENV.TESTS_FILE_LOADED = true;
 //# sourceMappingURL=tests.map
